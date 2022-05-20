@@ -1,19 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import DashboardSidebar from '../../components/DashboardSidebar';
+import AddAdmin from './AddAdmin';
+import AddService from './AddService';
 
 const Dashboard = () => {
     return (
-        <div>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-            <h1>This is dashboard</h1>
-        </div>
+        <DashboardSidebar>
+            <Outlet />
+        </DashboardSidebar>
     );
 };
 
